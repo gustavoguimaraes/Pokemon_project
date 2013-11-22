@@ -1,5 +1,5 @@
 class Starly
-
+# http://bulbapedia.bulbagarden.net/wiki/Starly_(Pok%C3%A9mon)
 def initialize
 	@level =  1
 	@type = "Flying"
