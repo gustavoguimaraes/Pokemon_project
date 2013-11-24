@@ -12,14 +12,15 @@ class Scrapper
 
 
 	def get_pokemon_name
-		names = html.search("div")
-		#collect already adds the array for you and return at the same time.
-		names.collect do | i |
-			i.text
+		name_array = []
+		names = html.search("tr td small")
+		names.each do | i |
+			name_array << i.text if i.text == " Turtwig"
 		end
+	name_array
 	end
 end
 
-pk_scrapper = Scrapper.new("http://bulbapedia.bulbagarden.net/wiki/Turtwig_(Pok%C3%A9mon)")
+#pk_scrapper = Scrapper.new("http://bulbapedia.bulbagarden.net/wiki/Turtwig_(Pok%C3%A9mon)")
 
-puts pk_scrapper.get_pokemon_name
+#pk_scrapper.get_pokemon_name

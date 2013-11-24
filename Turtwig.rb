@@ -31,17 +31,17 @@ end
 	end
 
 	def say_name
-		"Turtwig!"
+		puts "Turtwig!"
 	end
 
 end
 
 
-turtwig1 = Turtwig.new
+#turtwig1 = Turtwig.new
 
-puts turtwig1.say_name
+#puts turtwig1.say_name
 
-puts turtwig1.level_up(70, 3)
+#puts turtwig1.level_up(70, 3)
 
 
 
