@@ -31,7 +31,7 @@ end
 	end
 
 	def say_name
-		puts "Turtwig!"
+		"Turtwig!"
 	end
 
 end
